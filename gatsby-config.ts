@@ -28,7 +28,7 @@ const config: GatsbyConfig = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'posts',
-        path: './content/posts/',
+        path: `${__dirname}/content/posts/`,
       },
     },
     {
@@ -41,6 +41,16 @@ const config: GatsbyConfig = {
               maxWidth: 960,
             },
           },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          `gatsby-remark-vscode`,
+          `gatsby-remark-copy-linked-files`,
+          'gatsby-remark-autolink-headers',
+          `gatsby-remark-external-links`,
         ],
       },
     },

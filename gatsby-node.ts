@@ -13,6 +13,24 @@ export const createSchemaCustomization: GatsbyNode['createSchemaCustomization'] 
       siteUrl: String!
       title: String!
     }
+
+    type MarkdownRemarkFrontmatter {
+      category: String!
+      date: Date!
+      description: String!
+      draft: Boolean!
+      layout: String!
+      title: String!
+    }
+    
+    type MarkdownRemarkFields {
+      slug: String!
+    }
+
+    type MarkdownRemark implements Node {
+      frontmatter: MarkdownRemarkFrontmatter!
+      fields: MarkdownRemarkFields!
+    }
   `)
 }
 

@@ -1,0 +1,147 @@
+@tailwind base;
+@layer base {
+  .post-content {
+    & > * {
+      @apply text-base;
+      @apply mb-8;
+    }
+
+    & a {
+      @apply break-words;
+      @apply text-blue-600;
+      @apply font-medium;
+
+      @apply focus:ring;
+      @apply focus:ring-blue-400;
+
+      @apply hover:underline;
+    }
+
+    & h2,
+    & h3,
+    & h4,
+    & h5,
+    & h6 {
+      @apply font-bold;
+    }
+
+    & h2 {
+      @apply text-2xl;
+    }
+
+    & h3 {
+      @apply text-xl;
+    }
+
+    & h4 {
+      @apply text-lg;
+    }
+
+    & h5 {
+      @apply text-base;
+    }
+
+    & h6 {
+      @apply text-sm;
+    }
+
+    & .anchor.before {
+      @apply absolute;
+      @apply -top-7;
+      @apply left-7;
+      @apply inline-block;
+
+      @screen sm {
+        @apply top-0;
+        @apply left-0;
+        @apply flex;
+        @apply items-center;
+        @apply pr-4;
+        @apply h-full;
+      }
+
+      & > svg {
+        @apply w-6;
+        @apply h-6;
+      }
+    }
+
+    & code:not(pre code) {
+      @apply rounded;
+      @apply bg-gray-100;
+      @apply font-medium;
+      @apply border;
+      @apply border-gray-300;
+      @apply px-1;
+    }
+
+    & ul li,
+    & ol li {
+      @apply relative;
+      @apply pl-4;
+
+      &::before {
+        @apply absolute;
+        @apply left-0;
+        @apply w-1;
+        @apply text-center;
+      }
+    }
+
+    & li:not(:last-of-type) {
+      @apply mb-2;
+    }
+
+    & ul li::before {
+      content: '•';
+    }
+
+    & ol {
+      counter-reset: template-ol-counter;
+
+      & li {
+        counter-increment: template-ol-counter;
+        @apply pl-6;
+
+        &::before {
+          content: counter(template-ol-counter) '. ';
+        }
+      }
+    }
+
+    & > pre {
+      @screen sm {
+        @apply -mx-2;
+      }
+    }
+
+    & > blockquote {
+      @apply relative;
+      @apply font-bold;
+      @apply text-xl;
+      @apply italic;
+      @apply text-gray-500;
+      @apply pl-8;
+      @apply mb-16;
+
+      @screen sm {
+        @apply px-12;
+      }
+
+      &::before {
+        content: '';
+        @apply absolute;
+        @apply left-0;
+        @apply w-2;
+        @apply h-full;
+        @apply bg-black;
+
+        @apply rounded-sm;
+
+        @screen sm {
+          @apply left-1;
+        }
+      }
+    }
+  }
+}

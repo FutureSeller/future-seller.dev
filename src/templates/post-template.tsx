@@ -1,6 +1,11 @@
+import './post-template.css'
+
 import React from 'react'
 import Helmet from 'react-helmet'
-import { graphql, PageProps } from 'gatsby'
+import { graphql } from 'gatsby'
+import type { PageProps } from 'gatsby'
+
+import Layout from '../components/Layout'
 
 const PostTemplate = ({ data }: PageProps<Queries.PostBySlugQuery>) => {
   const { title } = data.site?.siteMetadata!
@@ -9,17 +14,22 @@ const PostTemplate = ({ data }: PageProps<Queries.PostBySlugQuery>) => {
   const description = postDescription !== null ? postDescription : title
 
   return (
-    <div>
+    <main>
       <Helmet>
         <title>{`${postTitle} - ${title}`}</title>
         <meta name="description" content={description} />
       </Helmet>
-      <div
-        className="post-single__body"
-        /* eslint-disable-next-line react/no-danger */
-        dangerouslySetInnerHTML={{ __html: post?.html! }}
-      />
-    </div>
+      <Layout>
+        <article>
+          <h1 className="text-3xl font-bold mt-4 mb-8">{postTitle}</h1>
+          <section
+            className="post-content"
+            /* eslint-disable-next-line react/no-danger */
+            dangerouslySetInnerHTML={{ __html: post?.html! }}
+          />
+        </article>
+      </Layout>
+    </main>
   )
 }
 

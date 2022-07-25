@@ -1,25 +1,26 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
+import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
 import type { PageProps } from 'gatsby'
 
+import Layout from '../components/Layout'
+import Post from '../components/Post'
+
 const IndexPage = ({ data }: PageProps<Queries.IndexPageQuery>) => {
+  const posts = data.allMarkdownRemark.edges.map(edge => (
+    <Post key={edge.node.fields.slug} node={edge.node} />
+  ))
+
   return (
     <main>
-      <title>{data.site?.siteMetadata?.title}</title>
-      <h1>
-        {data.site?.siteMetadata?.title}
-        <br />
-        <span>— you just made a Gatsby site! </span>
-        <ul>
-          {data.allMarkdownRemark.edges.map(edge => {
-            return (
-              <li>
-                <Link to={`/posts/${edge.node.fields?.slug!}`}>{edge.node.frontmatter?.title}</Link>
-              </li>
-            )
-          })}
-        </ul>
-      </h1>
+      <Helmet>
+        <title>{data.site?.siteMetadata.title}</title>
+        <meta name="description" />
+      </Helmet>
+      <Layout>
+        <h1 className="sr-only">you just made a Gatsby site!</h1>
+        {posts}
+      </Layout>
     </main>
   )
 }
