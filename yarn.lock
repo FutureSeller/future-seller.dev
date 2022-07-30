@@ -1420,7 +1420,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.15.4, @babel/runtime@npm:^7.18.0, @babel/runtime@npm:^7.18.9, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.15.4, @babel/runtime@npm:^7.18.0, @babel/runtime@npm:^7.18.9, @babel/runtime@npm:^7.6.3, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
   version: 7.18.9
   resolution: "@babel/runtime@npm:7.18.9"
   dependencies:
@@ -8762,6 +8762,7 @@ __metadata:
     gatsby-remark-responsive-iframe: ^5.19.0
     gatsby-remark-vscode: ^3.3.1
     gatsby-source-filesystem: ^4.19.0
+    gatsby-transformer-gitinfo: ^1.1.0
     gatsby-transformer-remark: ^5.19.0
     gatsby-transformer-sharp: ^4.19.0
     husky: ^8.0.0
@@ -9295,6 +9296,18 @@ __metadata:
     lodash: ^4.17.21
     node-fetch: ^2.6.7
   checksum: 4428a5144bfaeb06d8946a41381191ea5626c2b557369c55f3dbe3657dc7fa700dce55cca2a021e8adf4fb23d88c1beae068b002f0c59e9bfe0d9a6ec2b7383b
+  languageName: node
+  linkType: hard
+
+"gatsby-transformer-gitinfo@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "gatsby-transformer-gitinfo@npm:1.1.0"
+  dependencies:
+    "@babel/runtime": ^7.6.3
+    simple-git: ^1.126.0
+  peerDependencies:
+    gatsby: ^2.0.15
+  checksum: 8c6e8f60ec1a83654f1c1be8126907185ad8de9c9600e6945b8422ac1bec51bb0e0e4e71f3c806c2fae0a78891335ad917538c8cbfcc664862a740130eac7167
   languageName: node
   linkType: hard
 
@@ -16106,6 +16119,15 @@ __metadata:
     once: ^1.3.1
     simple-concat: ^1.0.0
   checksum: e4132fd27cf7af230d853fa45c1b8ce900cb430dd0a3c6d3829649fe4f2b26574c803698076c4006450efb0fad2ba8c5455fbb5755d4b0a5ec42d4f12b31d27e
+  languageName: node
+  linkType: hard
+
+"simple-git@npm:^1.126.0":
+  version: 1.132.0
+  resolution: "simple-git@npm:1.132.0"
+  dependencies:
+    debug: ^4.0.1
+  checksum: 717d7cf7919ebe771b2562ed70c79c3971ac650d9577a15c47052472f8e549a088aea593b6a7245d73af0425a202106e6c236d35a73dc4c48dce99bf7b4f939a
   languageName: node
   linkType: hard
 

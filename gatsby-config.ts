@@ -31,6 +31,7 @@ const config: GatsbyConfig = {
         path: `${__dirname}/content/posts/`,
       },
     },
+    'gatsby-transformer-gitinfo',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -51,6 +52,59 @@ const config: GatsbyConfig = {
           `gatsby-remark-copy-linked-files`,
           'gatsby-remark-autolink-headers',
           `gatsby-remark-external-links`,
+          {
+            resolve: 'gatsby-plugin-sitemap',
+            options: {
+              query: `
+              {
+                site {
+                  siteMetadata {
+                    siteUrl
+                  } 
+                }
+                allSitePage(
+                  filter: {
+                    path: { regex: "/^(?!/404/|/404.html|/dev-404-page/)/" }
+                  }
+                ) {
+                  nodes {
+                    path
+                  }
+                }
+                allFile(filter: {sourceInstanceName: {eq: "posts"}, relativePath: {regex: "/index.md$/"}}) {
+                  edges {
+                    node {
+                      fields {
+                        gitLogLatestDate
+                        slug
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+              resolvePages: ({
+                allSitePage: { nodes: allPages },
+                allFile: { edges: pageFiles },
+              }: Queries.Query) => {
+                return allPages.map(page => {
+                  const pageFile = pageFiles.find(({ node }) =>
+                    page.path.includes(node.fields!.slug!)
+                  )
+                  return {
+                    ...page,
+                    ...pageFile?.node.fields,
+                  }
+                })
+              },
+              serialize: ({ path, gitLogLatestDate }: Queries.SitePage & Queries.FileFields) => {
+                return {
+                  url: path,
+                  lastmod: gitLogLatestDate,
+                }
+              },
+            },
+          },
         ],
       },
     },

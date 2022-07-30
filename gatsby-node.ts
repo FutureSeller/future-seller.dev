@@ -54,6 +54,14 @@ export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, actions, getNod
       name: 'slug',
       value: slug,
     })
+  } else if (node.internal.type === 'File') {
+    const parsedFilePath = createFilePath({ node, getNode, basePath: 'posts' })
+    const slug = `${parsedFilePath.split('---')[1].replace(/\/$/, '')}`
+    createNodeField({
+      node,
+      name: 'slug',
+      value: slug,
+    })
   }
 }
 
