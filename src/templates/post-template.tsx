@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import type { PageProps } from 'gatsby'
 
+import SEO from '../components/SEO'
 import Layout from '../components/Layout'
 
 const PostTemplate = ({ data }: PageProps<Queries.PostBySlugQuery>) => {
@@ -15,10 +16,7 @@ const PostTemplate = ({ data }: PageProps<Queries.PostBySlugQuery>) => {
 
   return (
     <main>
-      <Helmet>
-        <title>{`${postTitle} - ${title}`}</title>
-        <meta name="description" content={description} />
-      </Helmet>
+      <SEO description={description} path={`/posts/${post?.fields.slug}`} title={postTitle} />
       <Layout>
         <article>
           <h1 className="text-3xl font-bold mt-4 mb-8">{postTitle}</h1>

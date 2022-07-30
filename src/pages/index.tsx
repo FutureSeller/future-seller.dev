@@ -1,25 +1,23 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import type { PageProps } from 'gatsby'
 
+import SEO from '../components/SEO'
 import Layout from '../components/Layout'
 import Post from '../components/Post'
 
 const IndexPage = ({ data }: PageProps<Queries.IndexPageQuery>) => {
-  const posts = data.allMarkdownRemark.edges.map(edge => (
-    <Post key={edge.node.fields.slug} node={edge.node} />
-  ))
-
   return (
     <main>
-      <Helmet>
-        <title>{data.site?.siteMetadata.title}</title>
-        <meta name="description" />
-      </Helmet>
+      <SEO
+        description={data.site?.siteMetadata.description}
+        title={data.site?.siteMetadata.title || 'FS.dev'}
+      />
       <Layout>
-        <h1 className="sr-only">you just made a Gatsby site!</h1>
-        {posts}
+        <h1 className="sr-only">{data.site?.siteMetadata.description}</h1>
+        {data.allMarkdownRemark.edges.map(edge => (
+          <Post key={edge.node.fields.slug} node={edge.node} />
+        ))}
       </Layout>
     </main>
   )
@@ -31,6 +29,7 @@ export const pageQuery = graphql`
   query IndexPage {
     site {
       siteMetadata {
+        description
         title
       }
     }

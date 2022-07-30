@@ -2,9 +2,9 @@ import type { GatsbyConfig } from 'gatsby'
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    description: 'FutureSeller의 개발이야기',
+    description: 'FutureSeller의 개발 관련 경험 및 이야기들',
     siteUrl: `https://future-seller.dev`,
-    title: `FutureSeller`,
+    title: `FutureSeller의 개발 블로그`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
