@@ -11,7 +11,7 @@ const Layout = ({ children }: Props) => {
       <header>
         <div className="py-10 mb-8 flex justify-between items-center">
           <Link to="/">
-            <span className="text-4xl font-bold text-primary">FS.dev</span>
+            <span className="text-5xl font-bold text-primary">FS.dev</span>
           </Link>
         </div>
       </header>
