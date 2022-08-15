@@ -3,7 +3,15 @@
   .post-content {
     & > * {
       @apply text-base;
-      @apply mb-8;
+      @apply mb-4;
+    }
+
+    & hr {
+      @apply my-8;
+    }
+
+    & p {
+      word-break: keep-all;
     }
 
     & a {
@@ -23,6 +31,7 @@
     & h5,
     & h6 {
       @apply font-bold;
+      @apply my-8;
     }
 
     & h2 {
