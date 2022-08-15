@@ -14,9 +14,14 @@ const config: GatsbyConfig = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: 'UA-177372093-1',
+        trackingIds: ['G-KYV7Y56PBM'],
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+          exclude: ['/404'],
+        },
       },
     },
     'gatsby-plugin-image',

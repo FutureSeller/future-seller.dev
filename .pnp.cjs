@@ -44,7 +44,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cz-conventional-changelog", "npm:3.3.0"],\
             ["date-fns", "npm:2.29.1"],\
             ["gatsby", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:4.19.2"],\
-            ["gatsby-plugin-google-analytics", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:4.19.0"],\
+            ["gatsby-plugin-google-gtag", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:4.20.0"],\
             ["gatsby-plugin-image", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:2.19.0"],\
             ["gatsby-plugin-manifest", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:4.19.0"],\
             ["gatsby-plugin-postcss", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:5.19.0"],\
@@ -12194,7 +12194,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cz-conventional-changelog", "npm:3.3.0"],\
             ["date-fns", "npm:2.29.1"],\
             ["gatsby", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:4.19.2"],\
-            ["gatsby-plugin-google-analytics", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:4.19.0"],\
+            ["gatsby-plugin-google-gtag", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:4.20.0"],\
             ["gatsby-plugin-image", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:2.19.0"],\
             ["gatsby-plugin-manifest", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:4.19.0"],\
             ["gatsby-plugin-postcss", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:5.19.0"],\
@@ -12600,27 +12600,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["gatsby-plugin-google-analytics", [\
-        ["npm:4.19.0", {\
-          "packageLocation": "./.yarn/cache/gatsby-plugin-google-analytics-npm-4.19.0-dcc5ecaee3-14b0675e3a.zip/node_modules/gatsby-plugin-google-analytics/",\
+      ["gatsby-plugin-google-gtag", [\
+        ["npm:4.20.0", {\
+          "packageLocation": "./.yarn/cache/gatsby-plugin-google-gtag-npm-4.20.0-a7f60912c1-347cb0e51a.zip/node_modules/gatsby-plugin-google-gtag/",\
           "packageDependencies": [\
-            ["gatsby-plugin-google-analytics", "npm:4.19.0"]\
+            ["gatsby-plugin-google-gtag", "npm:4.20.0"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:4.19.0", {\
-          "packageLocation": "./.yarn/__virtual__/gatsby-plugin-google-analytics-virtual-82dc82fca0/0/cache/gatsby-plugin-google-analytics-npm-4.19.0-dcc5ecaee3-14b0675e3a.zip/node_modules/gatsby-plugin-google-analytics/",\
+        ["virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:4.20.0", {\
+          "packageLocation": "./.yarn/__virtual__/gatsby-plugin-google-gtag-virtual-1bcb6398ee/0/cache/gatsby-plugin-google-gtag-npm-4.20.0-a7f60912c1-347cb0e51a.zip/node_modules/gatsby-plugin-google-gtag/",\
           "packageDependencies": [\
-            ["gatsby-plugin-google-analytics", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:4.19.0"],\
+            ["gatsby-plugin-google-gtag", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:4.20.0"],\
             ["@babel/runtime", "npm:7.18.9"],\
             ["@types/gatsby", null],\
             ["@types/react", "npm:18.0.15"],\
             ["@types/react-dom", "npm:18.0.6"],\
             ["gatsby", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:4.19.2"],\
-            ["minimatch", "npm:3.0.4"],\
+            ["minimatch", "npm:3.1.2"],\
             ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:18.2.0"],\
-            ["web-vitals", "npm:1.1.2"]\
+            ["react-dom", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:18.2.0"]\
           ],\
           "packagePeers": [\
             "@types/gatsby",\
@@ -23692,15 +23691,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/web-namespaces-npm-1.1.4-a6dfacb865-5149842ccb.zip/node_modules/web-namespaces/",\
           "packageDependencies": [\
             ["web-namespaces", "npm:1.1.4"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["web-vitals", [\
-        ["npm:1.1.2", {\
-          "packageLocation": "./.yarn/cache/web-vitals-npm-1.1.2-8e3860bc35-9207102908.zip/node_modules/web-vitals/",\
-          "packageDependencies": [\
-            ["web-vitals", "npm:1.1.2"]\
           ],\
           "linkType": "HARD"\
         }]\
