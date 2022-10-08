@@ -4,7 +4,7 @@ date: '2022-10-08T00:00:00.121Z'
 layout: post
 draft: false
 category: 'Design System Component'
-description: '@chakra-ui/accordion은 어떻게 어떻게 동작하는걸까?'
+description: '@chakra-ui/accordion은 어떻게 동작하는걸까?'
 ---
 
 ## Table of contents
