@@ -93,6 +93,8 @@ case 'check': {
 
 겸사겸사 `stylelint` 규칙들도 강제해버릴까 고민하고 있었는데 고쳐야할 영역이 많아지다보니 `gts` 비스무리 한 것을 그냥 새로 작성할까 생각 중이다.
 
+---
+
 ## 문제 2: Emotion: Running multiple instances may cause problems.
 
 이 문제를 겪게된 구성은 다음과 같다. `admin-project`라는 리액트로 작성된 레포지토리가 있고 `@futureseller/design-system` 패키지를 설치해서 사용한다. 이 패키지는
