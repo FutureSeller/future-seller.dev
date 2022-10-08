@@ -135,7 +135,7 @@
       @apply italic;
       @apply text-gray-500;
       @apply pl-8;
-      @apply mb-16;
+      @apply my-8;
 
       @screen sm {
         @apply px-12;
