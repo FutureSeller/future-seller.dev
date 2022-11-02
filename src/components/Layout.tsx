@@ -15,7 +15,7 @@ const Layout = ({ children }: Props) => {
           </Link>
         </div>
       </header>
-      <div className="flex-1">{children}</div>
+      <div>{children}</div>
       <footer className="py-8">
         © {new Date().getFullYear()}&nbsp;
         <a
