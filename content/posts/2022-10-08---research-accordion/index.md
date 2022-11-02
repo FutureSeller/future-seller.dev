@@ -283,7 +283,7 @@ function Accordion() {
 ```
 
 <details>
-  <summary class="mb-4">(아코디언은 아니지만) 들쭉날쭉한 JSX 구조에서 descendant가 동작하는 예시</summary>
+  <summary>(아코디언은 아니지만) 들쭉날쭉한 JSX 구조에서 descendant가 동작하는 예시</summary>
   <iframe 
     src="https://stackblitz.com/edit/react-ts-77jggt?ctl=1&embed=1&file=App.tsx"
     width="100%"

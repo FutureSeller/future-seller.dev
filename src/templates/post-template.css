@@ -3,11 +3,12 @@
   .post-content {
     & > * {
       @apply text-base;
-      @apply mb-4;
+      @apply pb-4;
+      @apply leading-relaxed;
     }
 
     & hr {
-      @apply my-8;
+      @apply mt-8;
     }
 
     & p {
@@ -31,7 +32,7 @@
     & h5,
     & h6 {
       @apply font-bold;
-      @apply my-8;
+      @apply py-6;
     }
 
     & h2 {
@@ -102,7 +103,7 @@
     }
 
     & li:not(:last-of-type) {
-      @apply mb-2;
+      @apply pb-2;
     }
 
     & ul li::before {
@@ -123,6 +124,7 @@
     }
 
     & > pre {
+      @apply mb-4;
       @screen sm {
         @apply -mx-2;
       }
@@ -135,7 +137,7 @@
       @apply italic;
       @apply text-gray-500;
       @apply pl-8;
-      @apply my-8;
+      @apply py-8;
 
       @screen sm {
         @apply px-12;
