@@ -136,12 +136,10 @@
       @apply text-xl;
       @apply italic;
       @apply text-gray-500;
-      @apply pl-8;
-      @apply py-8;
-
-      @screen sm {
-        @apply px-12;
-      }
+      @apply px-8;
+      @apply py-0;
+      @apply mt-4;
+      @apply mb-8;
 
       &::before {
         content: '';
