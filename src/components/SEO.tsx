@@ -73,6 +73,10 @@ const SEO = ({ description, lang = 'ko', path, title }: Props) => {
       name: 'twitter:url',
       content: path ? `${siteUrl}${path}` : siteUrl,
     },
+    {
+      name: 'naver-site-verification',
+      content: '926a3764d112b5285633cf4190661b13659ea98e',
+    },
   ]
 
   return (
