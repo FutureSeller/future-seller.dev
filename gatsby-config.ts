@@ -27,6 +27,7 @@ const config: GatsbyConfig = {
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-robots-txt',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {

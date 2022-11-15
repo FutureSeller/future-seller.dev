@@ -50,6 +50,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-plugin-manifest", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:4.19.0"],\
             ["gatsby-plugin-postcss", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:5.19.0"],\
             ["gatsby-plugin-react-helmet", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:5.19.0"],\
+            ["gatsby-plugin-robots-txt", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:1.8.0"],\
             ["gatsby-plugin-sharp", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:4.19.0"],\
             ["gatsby-plugin-sitemap", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:5.19.0"],\
             ["gatsby-remark-autolink-headers", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:5.19.0"],\
@@ -2540,6 +2541,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@babel/runtime", "npm:7.18.9"],\
             ["regenerator-runtime", "npm:0.13.9"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:7.20.1", {\
+          "packageLocation": "./.yarn/cache/@babel-runtime-npm-7.20.1-8f9256f2ed-00567a333d.zip/node_modules/@babel/runtime/",\
+          "packageDependencies": [\
+            ["@babel/runtime", "npm:7.20.1"],\
+            ["regenerator-runtime", "npm:0.13.11"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -12263,6 +12272,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-plugin-manifest", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:4.19.0"],\
             ["gatsby-plugin-postcss", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:5.19.0"],\
             ["gatsby-plugin-react-helmet", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:5.19.0"],\
+            ["gatsby-plugin-robots-txt", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:1.8.0"],\
             ["gatsby-plugin-sharp", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:4.19.0"],\
             ["gatsby-plugin-sitemap", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:5.19.0"],\
             ["gatsby-remark-autolink-headers", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:5.19.0"],\
@@ -12926,6 +12936,30 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["gatsby-plugin-robots-txt", [\
+        ["npm:1.8.0", {\
+          "packageLocation": "./.yarn/cache/gatsby-plugin-robots-txt-npm-1.8.0-5f10a9345e-0fe740f6cb.zip/node_modules/gatsby-plugin-robots-txt/",\
+          "packageDependencies": [\
+            ["gatsby-plugin-robots-txt", "npm:1.8.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:1.8.0", {\
+          "packageLocation": "./.yarn/__virtual__/gatsby-plugin-robots-txt-virtual-6478203e01/0/cache/gatsby-plugin-robots-txt-npm-1.8.0-5f10a9345e-0fe740f6cb.zip/node_modules/gatsby-plugin-robots-txt/",\
+          "packageDependencies": [\
+            ["gatsby-plugin-robots-txt", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:1.8.0"],\
+            ["@babel/runtime", "npm:7.20.1"],\
+            ["@types/gatsby", null],\
+            ["gatsby", "virtual:022910ff4427284ef1dc75b37c2a40451d21ab125f190f4131dc456dca50f8ba66c567f4a191c785067af3dd88ccf68cfbe3cf85987f66c04424c2039cb4afd7#npm:4.19.2"],\
+            ["generate-robotstxt", "npm:8.0.3"]\
+          ],\
+          "packagePeers": [\
+            "@types/gatsby",\
+            "gatsby"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["gatsby-plugin-sharp", [\
         ["npm:4.19.0", {\
           "packageLocation": "./.yarn/cache/gatsby-plugin-sharp-npm-4.19.0-67ee246988-d3f96ed2c9.zip/node_modules/gatsby-plugin-sharp/",\
@@ -13517,6 +13551,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["string-width", "npm:4.2.3"],\
             ["strip-ansi", "npm:6.0.1"],\
             ["wide-align", "npm:1.1.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["generate-robotstxt", [\
+        ["npm:8.0.3", {\
+          "packageLocation": "./.yarn/cache/generate-robotstxt-npm-8.0.3-cf91236923-93d821d6e4.zip/node_modules/generate-robotstxt/",\
+          "packageDependencies": [\
+            ["generate-robotstxt", "npm:8.0.3"],\
+            ["cosmiconfig", "npm:6.0.0"],\
+            ["fs-extra", "npm:9.1.0"],\
+            ["ip-regex", "npm:4.3.0"],\
+            ["is-absolute-url", "npm:3.0.3"],\
+            ["meow", "npm:7.1.1"],\
+            ["resolve-from", "npm:5.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -14824,6 +14873,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/ip-npm-2.0.0-204facb3cc-cfcfac6b87.zip/node_modules/ip/",\
           "packageDependencies": [\
             ["ip", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["ip-regex", [\
+        ["npm:4.3.0", {\
+          "packageLocation": "./.yarn/cache/ip-regex-npm-4.3.0-4ac12c6be9-7ff904b891.zip/node_modules/ip-regex/",\
+          "packageDependencies": [\
+            ["ip-regex", "npm:4.3.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -16613,6 +16671,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["meow", [\
+        ["npm:7.1.1", {\
+          "packageLocation": "./.yarn/cache/meow-npm-7.1.1-8aa72d593e-87bba177ab.zip/node_modules/meow/",\
+          "packageDependencies": [\
+            ["meow", "npm:7.1.1"],\
+            ["@types/minimist", "npm:1.2.2"],\
+            ["camelcase-keys", "npm:6.2.2"],\
+            ["decamelize-keys", "npm:1.1.0"],\
+            ["hard-rejection", "npm:2.1.0"],\
+            ["minimist-options", "npm:4.1.0"],\
+            ["normalize-package-data", "npm:2.5.0"],\
+            ["read-pkg-up", "npm:7.0.1"],\
+            ["redent", "npm:3.0.0"],\
+            ["trim-newlines", "npm:3.0.1"],\
+            ["type-fest", "npm:0.13.1"],\
+            ["yargs-parser", "npm:18.1.3"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:8.1.2", {\
           "packageLocation": "./.yarn/cache/meow-npm-8.1.2-bcfe48d4f3-bc23bf1b44.zip/node_modules/meow/",\
           "packageDependencies": [\
@@ -20911,6 +20987,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
+        ["npm:0.13.11", {\
+          "packageLocation": "./.yarn/cache/regenerator-runtime-npm-0.13.11-90bf536060-27481628d2.zip/node_modules/regenerator-runtime/",\
+          "packageDependencies": [\
+            ["regenerator-runtime", "npm:0.13.11"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:0.13.9", {\
           "packageLocation": "./.yarn/cache/regenerator-runtime-npm-0.13.9-6d02340eec-65ed455fe5.zip/node_modules/regenerator-runtime/",\
           "packageDependencies": [\
@@ -23154,6 +23237,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["type-fest", [\
+        ["npm:0.13.1", {\
+          "packageLocation": "./.yarn/cache/type-fest-npm-0.13.1-7f4486b973-e6bf2e3c44.zip/node_modules/type-fest/",\
+          "packageDependencies": [\
+            ["type-fest", "npm:0.13.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:0.18.1", {\
           "packageLocation": "./.yarn/cache/type-fest-npm-0.18.1-47b079775d-e96dcee18a.zip/node_modules/type-fest/",\
           "packageDependencies": [\
