@@ -113,6 +113,65 @@ const config: GatsbyConfig = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }: { query: Queries.Query }) => {
+              return allMarkdownRemark.nodes
+                .map(node => {
+                  if (site == null) {
+                    return null
+                  }
+
+                  return {
+                    ...node.frontmatter,
+                    description: node.excerpt,
+                    date: node.frontmatter.date,
+                    url: `${site.siteMetadata.siteUrl}/posts/${node.fields.slug}`,
+                    guid: `${site.siteMetadata.siteUrl}/posts/${node.fields.slug}`,
+                  }
+                })
+                .filter(Boolean)
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  nodes {
+                    excerpt
+                    fields { 
+                      slug 
+                    }
+                    frontmatter {
+                      title
+                      date
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/rss.xml',
+            title: 'future-seller.dev',
+            match: '^/posts/',
+          },
+        ],
+      },
+    },
   ],
 }
 
